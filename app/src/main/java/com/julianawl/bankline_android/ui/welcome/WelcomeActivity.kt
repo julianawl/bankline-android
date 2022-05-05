@@ -17,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btContinue.setOnClickListener {
-            val accountId = binding.etAccountId.text.toString().toInt()
+            val accountId = binding.etAccountHolderId.text.toString().toInt()
             val account = Correntista(accountId)
 
             val intent = Intent(this, BankStatementActivity::class.java).apply {
